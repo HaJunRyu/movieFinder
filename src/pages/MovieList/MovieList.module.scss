@@ -1,0 +1,65 @@
+.movieListPage {
+  padding-top: 30px;
+  text-align: center;
+  background: #fdfcf0;
+  min-height: 100vh;
+}
+
+.searchInput {
+  width: 450px;
+  height: 50px;
+}
+
+.searchButton {
+  width: 80px;
+  height: 50px;
+  vertical-align: top;
+  margin-left: 10px;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 5px;
+  color: rgba(107, 68, 17, 0.87);
+  font-size: 20px;
+  background: #fff;
+}
+
+.movieList {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.movieItem {
+  padding: 20px 10px;
+  display: flex;
+  text-align: start;
+  border-bottom: 1px solid #cccccc;
+  height: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coverImage {
+  // width: 120px;
+}
+
+.movieContentContainer {
+  margin-left: 20px;
+}
+
+.movieContent {
+  margin-top: 10px;
+  color: #333333;
+  line-height: 1.8;
+  overflow: hidden;
+  max-height: 180px;
+  text-overflow: ellipsis;
+}
+
+.loadingSpinner {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background: transparent;
+}
