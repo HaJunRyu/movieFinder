@@ -35,8 +35,8 @@ export default function MovieList() {
 
   const searchMovies = async e => {
     setIsLoading(true);
-    $input.current.focus();
     e.preventDefault();
+
     const res = await movieRequest.searchMovies(movieSearchInput, page);
     if (res.status === 'ok') {
       if (res.data.movie_count) {
@@ -47,21 +47,30 @@ export default function MovieList() {
           setMovieList(movies);
         };
       } else setMovieList([]);
-    } else console.log('request error');
-    movieSearchInput = '';
+      $input.current.focus();
+    } else {
+      console.log('request error');
+    }
     setIsLoading(false);
+    movieSearchInput = '';
   };
 
   useEffect(() => {
     const fetch = async () => {
       const res = await movieRequest.fetchMovieList();
       if (res.status === 'ok') {
-        setMovieList(res.data.movies);
-        setIsLoading(false);
+        const movies = res.data.movies;
+        const img = document.createElement('img');
+        img.src = movies[0].medium_cover_image;
+        img.onload = () => {
+          setMovieList(movies);
+          setIsLoading(false);
+        };
       } else console.log('request error');
     };
     fetch();
   }, []);
+
   return (
     <div className={movieListPage}>
       <Heading level='1'>Movie Finder</Heading>
