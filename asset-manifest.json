@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/movieFinder/static/css/main.f007521d.chunk.css",
+    "main.js": "/movieFinder/static/js/main.da50902e.chunk.js",
+    "main.js.map": "/movieFinder/static/js/main.da50902e.chunk.js.map",
+    "runtime-main.js": "/movieFinder/static/js/runtime-main.8c59ef1a.js",
+    "runtime-main.js.map": "/movieFinder/static/js/runtime-main.8c59ef1a.js.map",
+    "static/css/2.da0952a0.chunk.css": "/movieFinder/static/css/2.da0952a0.chunk.css",
+    "static/js/2.bdcd0138.chunk.js": "/movieFinder/static/js/2.bdcd0138.chunk.js",
+    "static/js/2.bdcd0138.chunk.js.map": "/movieFinder/static/js/2.bdcd0138.chunk.js.map",
+    "index.html": "/movieFinder/index.html",
+    "static/css/2.da0952a0.chunk.css.map": "/movieFinder/static/css/2.da0952a0.chunk.css.map",
+    "static/css/main.f007521d.chunk.css.map": "/movieFinder/static/css/main.f007521d.chunk.css.map",
+    "static/js/2.bdcd0138.chunk.js.LICENSE.txt": "/movieFinder/static/js/2.bdcd0138.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/movieFinder/static/media/outline-icons.ddae9b1b.woff",
+    "static/media/wedges.5a2e524a.svg": "/movieFinder/static/media/wedges.5a2e524a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c59ef1a.js",
+    "static/css/2.da0952a0.chunk.css",
+    "static/js/2.bdcd0138.chunk.js",
+    "static/css/main.f007521d.chunk.css",
+    "static/js/main.da50902e.chunk.js"
+  ]
+}
